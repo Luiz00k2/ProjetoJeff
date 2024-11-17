@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Jogos</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000; /* Fundo preto */
+      color: #fff; /* Texto branco */
+    }
+
+    .header {
+      background-color: #dc3545; /* Vermelho */
+      padding: 10px;
+    }
+
+    .header a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    .header a:hover {
+      text-decoration: underline;
+    }
+
+    .search-box {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 2px 10px;
+    }
+
+    .highlight-card {
+      background-color: #444; /* Fundo cinza escuro */
+      color: #fff;
+      border-radius: 8px;
+      padding: 15px;
+      position: relative;
+    }
+
+    .highlight-card .badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #dc3545;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .game-card {
+      text-align: center;
+    }
+
+    .game-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+    }
+
+    .game-card .stars {
+      color: #f1c40f; /* Cor das estrelas */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="header d-flex justify-content-between align-items-center">
+    <nav>
+      <a href="#">INSCREVER-SE</a>
+      <a href="#">LOGIN</a>
+    </nav>
+    <div class="search-box">
+      <input type="text" class="form-control" placeholder="Pesquisar">
+    </div>
+    <nav>
+      <a href="#">CONFIGURAÇÃO</a>
+      <a href="#">PÁGINA INICIAL</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <div class="container mt-4">
+    <h4>NOVOS JOGOS</h4>
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="highlight-card d-flex">
+          <img src="https://via.placeholder.com/150" alt="Black Myth: Wukong" class="me-3" style="width: 150px; height: 150px;">
+          <div>
+            <h5>BLACK MITH: WUKONG</h5>
+            <p class="stars">⭐ ⭐ ⭐ ⭐ ⭐</p>
+            <p>MACACO 👍</p>
+          </div>
+          <span class="badge">NEW</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Galeria de jogos -->
+    <div class="row">
+      <div class="col-3">
+        <div class="game-card">
+          <img src="https://via.placeholder.com/100" alt="Jogo 1">
+          <p class="stars">⭐ ⭐ ⭐ ⭐ ⭐</p>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="game-card">
+          <img src="https://via.placeholder.com/100" alt="Jogo 2">
+          <p class="stars">⭐ ⭐ ⭐ ⭐ ⭐</p>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="game-card">
+          <img src="https://via.placeholder.com/100" alt="Jogo 3">
+          <p class="stars">⭐ ⭐ ⭐ ⭐ ⭐</p>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="game-card">
+          <img src="https://via.placeholder.com/100" alt="Jogo 4">
+          <p class="stars">⭐ ⭐ ⭐ ⭐ ⭐</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
